@@ -116,6 +116,12 @@
     </style>
 </head>
 <body>
+    <audio id="bgmusic" loop>
+    <source src="lagu1" type="audio/mp3">
+  </audio>
+    <div class="reply-btn" style="text-align: center; margin-top: 20px;">
+    <button onclick="playMusic()">🩵 Play Music</button>
+  </div>
      <div class="letter-container">
     <h1>Love Letter for You</h1>
     <div class="heart">🤍</div>
@@ -167,13 +173,7 @@
     <div class="gallery-item">
         <img src="img6.jpg" alt="memory 6">
     </div>
-    <div class="reply-btn">
-      <button onclick="playMusic()" style="margin-top: 10px;">💙 Play Music</button>
-    </div>
   </div>
-  <audio id="bgmusic"loop>
-    <source src="lagu1.mp3" type="audio/mp3">
-  </audio>
   <script>
     function createHeart() {
       const heart = document.createElement('div');
